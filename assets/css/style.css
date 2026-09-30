@@ -420,3 +420,11 @@ section[id] { scroll-margin-top: 72px; }
 @media (max-width: 520px) {
   .gallery, .products { margin: 0 -16px; padding: 0 16px; scroll-padding: 0 16px; }
 }
+
+/* ---------- Hizmetler ---------- */
+.services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+.service { border-top: 1px solid var(--line); padding-top: 24px; }
+.service h3 { font-family: var(--serif); font-weight: 400; font-size: 1.35rem; margin: 0 0 12px; }
+.service p { margin: 0; color: var(--ink-soft); font-size: .96rem; }
+@media (max-width: 900px) { .services { grid-template-columns: repeat(2, 1fr); gap: 32px; } }
+@media (max-width: 560px) { .services { grid-template-columns: 1fr; gap: 28px; } }

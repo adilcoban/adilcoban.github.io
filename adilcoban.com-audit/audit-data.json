@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "health_score": 61,
+    "business_type": "Local Service (hair salon, Kırşehir)",
+    "top_findings": [
+      "Single page with thin content and no service pages",
+      "Title/H1 lack location and service keywords",
+      "No robots.txt, sitemap.xml or canonical",
+      "OG/schema image URLs are relative; no proper share image",
+      "Product catalog rendered only by JavaScript"
+    ],
+    "quick_wins": [
+      "Add robots.txt and sitemap.xml",
+      "Rewrite title with Kırşehir + service",
+      "Absolute og:image + canonical",
+      "Descriptive gallery alt text",
+      "Replace picsum.photos CTA image"
+    ]
+  },
+  "categories": [
+    {"name": "Technical SEO", "score": 70, "what_works": ["HTTPS", "301 redirects http and apex to www", "lang=tr", "tiny CSS/JS"], "findings": [
+      {"title": "robots.txt and sitemap.xml missing", "severity": "High", "description": "Both return 404.", "recommendation": "Add both files and submit the sitemap in Search Console."},
+      {"title": "No canonical tag", "severity": "Medium", "description": "No rel=canonical in head.", "recommendation": "Add canonical to https://www.adilcoban.com/."}]},
+    {"name": "Content Quality", "score": 45, "what_works": ["Named owner with portrait", "Useful FAQ", "Consistent NAP"], "findings": [
+      {"title": "Thin single-page content", "severity": "High", "description": "No service descriptions, prices or reviews.", "recommendation": "Add a services section, then dedicated service pages."}]},
+    {"name": "On-Page SEO", "score": 60, "what_works": ["Good meta description", "Single H1", "Logical heading order"], "findings": [
+      {"title": "Title lacks location/service", "severity": "High", "description": "Adil Çoban — Bayan Kuaförü", "recommendation": "Kırşehir Bayan Kuaförü | Adil Çoban — Kesim, Boya, Gelin Saçı"}]},
+    {"name": "Schema", "score": 75, "what_works": ["HairSalon JSON-LD with address, geo, hours"], "findings": [
+      {"title": "Relative image URL and missing fields", "severity": "High", "description": "image is assets/img/icon-512.png; no url, priceRange, areaServed.", "recommendation": "Use absolute URLs and add missing properties."}]},
+    {"name": "Performance", "score": 85, "what_works": ["Small HTML/CSS/JS", "Hero dimensions and fetchpriority", "Lazy-loaded gallery"], "findings": [
+      {"title": "Third-party CTA image and render-blocking fonts", "severity": "Medium", "description": "picsum.photos image; Google Fonts CSS. CWV not measured (estimate).", "recommendation": "Use a local image; self-host fonts; run PageSpeed Insights."}]},
+    {"name": "AI Search Readiness", "score": 40, "what_works": ["No crawler blocking"], "findings": [
+      {"title": "Little quotable text", "severity": "Medium", "description": "Sparse factual passages.", "recommendation": "Add concise service, price and location passages."}]},
+    {"name": "Images", "score": 70, "what_works": ["Width/height set", "Lazy loading"], "findings": [
+      {"title": "Generic gallery alt text, no WebP", "severity": "Medium", "description": "Alt is 'Salonumuzdan çalışma örneği N'.", "recommendation": "Describe each image; convert to WebP."}]}
+  ],
+  "action_plan": {"phases": [
+    {"name": "Phase 1: Critical Fixes", "timeframe": "Week 1", "items": ["robots.txt + sitemap.xml", "Title + canonical", "Absolute og:image and share image", "GBP check"]},
+    {"name": "Phase 2: High-Impact Improvements", "timeframe": "Weeks 2-3", "items": ["Services section", "Product list in static HTML", "Schema additions"]},
+    {"name": "Phase 3: Content & Authority", "timeframe": "Month 2", "items": ["Service pages", "Reviews/testimonials", "Expanded FAQ"]},
+    {"name": "Phase 4: Monitoring & Iteration", "timeframe": "Ongoing", "items": ["PageSpeed Insights", "Search Console"]}
+  ]},
+  "artifacts": {"findings_dir": "findings/", "screenshots_dir": "screenshots/"}
+}
