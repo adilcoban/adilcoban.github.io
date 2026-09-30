@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+._*
+
+# Editör
+.vscode/
+.idea/
+*.swp
+
+# Yapay zekâ / geliştirme araçları (site için gerekli değil)
+.claude/
+.agents/
+skills-lock.json
+.playwright/
+.playwright-cli/
+
+# Logo kaynak dosyaları (sitede kullanılmıyor)
+assets/img/logo1.PNG
+assets/img/logo2.PNG
+
+# Geçici dosyalar
+*.log
+*.tmp
+node_modules/
