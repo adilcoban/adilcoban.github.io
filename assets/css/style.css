@@ -437,3 +437,20 @@ section[id] { scroll-margin-top: 72px; }
 @media (max-width: 520px) {
   .gallery, .products { margin: 0 -16px; padding: 0 16px; scroll-padding: 0 16px; }
 }
+
+/* ---------- Gizlilik sayfası ---------- */
+.legal-top { border-bottom: 1px solid var(--line); }
+.legal-top .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+.legal-top .brand img { height: 56px; filter: brightness(0.17); }
+.link-back { font-size: .92rem; color: var(--ink-soft); }
+.link-back:hover { color: var(--ink); }
+.legal { padding: clamp(56px, 9vw, 110px) 0; }
+.legal h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); margin: 0 0 12px; }
+.legal h2 { font-size: 1.6rem; margin: 48px 0 14px; }
+.legal p, .legal li, .legal address { color: var(--ink-soft); }
+.legal strong { color: var(--ink); font-weight: 500; }
+.legal address { font-style: normal; margin-bottom: 12px; }
+.legal ul { padding-left: 1.2em; margin: 0 0 16px; }
+.legal li { margin-bottom: 6px; }
+.legal a { color: var(--ink); border-bottom: 1px solid var(--line); }
+.legal .updated { color: var(--muted); font-size: .9rem; margin: 0 0 40px; }
