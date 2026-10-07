@@ -22,3 +22,8 @@ assets/img/logo2.PNG
 *.log
 *.tmp
 node_modules/
+
+# Yayında gerekmeyen dosyalar (GitHub Pages bunları herkese açık sunar)
+README.md
+scripts/
+adilcoban.com-audit/
